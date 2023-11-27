@@ -1,0 +1,167 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.background{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: -10;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}   
+.left{
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.left img{
+  width: 150px;
+  filter: invert(100%);
+}
+.left div{
+  text-align: center;
+  font-size: 33px;
+  line-height: 30px;
+}
+.mid{
+  display: inline;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 30%;
+}
+.right{
+  position: absolute;
+  top: 25px;
+  right:30px;
+}
+
+.btn {
+  font-size: 20px;
+  margin-left: 12px;
+  margin-right: 10px;
+  padding: 4px 14px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: grey;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn:before {
+content: "";
+background: linear-gradient(
+  45deg,#ff0000,#ff7300,#fffb00,#48ff00,
+    #00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:active {
+  color: gray;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:hover:before {
+  opacity: 1;
+}
+
+.btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.navbar{
+  display: inline-block;
+}
+.navbar li{
+  display: inline-block;
+  font-size: 25px;
+}
+.navbar li a{
+  color: white;
+  text-decoration: none;
+  margin: 34px 18px;
+}
+.navbar li a:hover, .navbar li a.active{
+  color: yellow;
+}
+
+.container{
+  color: white;
+  border: 2px solid white;
+  margin-top: -460px;
+  margin-left: 60px;
+  padding: 30px;
+  width: 33%;
+  border-radius: 25px;
+  position: absolute;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+.container h2{
+  text-align: center;
+}
+.form-group input{
+  text-align: center;
+  display: block;
+  width: 508px;
+  padding: 1px;
+  font-size: 25px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid green;
+}
+.btn1{
+  font-size: 20px;
+  margin-left: 200px;
+  background-color:red;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid grey;
+    
+}
+.btn1:hover{
+  color: black;
+}

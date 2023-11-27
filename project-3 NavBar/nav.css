@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+nav{
+    position: relative;
+    width: 524px;
+    height: 50px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    z-index: 1;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(to bottom right, #0100EC, #FB36F4);
+    border-radius: 8px; 
+    transition: 0.5s;
+}
+nav a:nth-child(1):hover~span
+{
+    left: 0;
+}
+nav a:nth-child(2):hover~span
+{
+    left: 95px;
+}
+nav a:nth-child(3):hover~span
+{
+    left: 189px;
+    width: 110px;
+}
+nav a:nth-child(4):hover~span
+{
+    left: 300px;
+    width: 110px;
+
+}
+nav a:nth-child(5):hover~span
+{
+    left: 414px;
+    width: 110px;
+}

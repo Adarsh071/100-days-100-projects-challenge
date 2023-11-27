@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 300px 0px 300px;
+}
+img{
+    height: 30px;
+    gap: 10px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    filter: blur(1px);
+    transition: all 1.2s;
+
+}
+img:hover{
+    height: 500px;
+    filter: blur(0);
+    box-shadow: 0 0 10px rgb(0, 255, 195);
+}
+ .img5:hover{
+    height: 480px;
+}

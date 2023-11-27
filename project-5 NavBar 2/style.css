@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: url(./image/use.jpg);
+    background-repeat: no-repeat;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    /* max-width: 1230px; */
+    padding: 12px 8px;
+    margin: 0 auto;
+    min-width: 1030px;
+    background-color: #0078ad;
+}
+
+.left-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.hamburger{
+    border-radius: 50%;
+}
+.hamburger img{
+    height: 24px;
+    margin: 10px;
+}
+.hamburger:hover{
+    background-color: rgb(0, 89, 130);
+    border: 1px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.logo img{
+    height: 48px;
+    padding-left: 50px;
+}
+
+.right-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+}
+
+input{
+    height: 48px;
+    width: 500px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid black;
+
+    background-color: white;
+    background-image: url(./image/search.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.cart-icon{
+    border-radius: 50%;
+}
+.cart-icon img{
+    height: 24px;
+    margin: 10px;
+}
+.cart-icon:hover{
+    background-color: rgb(0, 89, 130);
+    border: 1px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.wishlist{
+    border-radius: 50%;
+    margin-left: 25px;
+}
+.wishlist img{
+    height: 24px;
+    margin: 10px;
+}
+.wishlist:hover{
+    background-color: rgb(0, 89, 130);
+    border: 1px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.signInButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #0078ad;
+    border: 1px solid #0078ad;
+    margin-left: 25px;
+}
+.signInButton:hover{
+    background-color: rgb(0, 89, 130);
+    border: 1px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.signIn a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 8px;
+}
+
+
+.menu-bar{
+    background-color: rgb(0, 89, 130);
+    text-align: center;
+    min-width: 1030px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 150px;
+    padding: 10px 4px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a{
+    color: rgb(93, 92, 92);
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #58cdff;
+}
+.fa-angle-right{
+    float: right;
+    color: black;
+}
+.fa-angle-left{
+    float: left;
+    color: black;
+}
+
+
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -38.5px;
+    margin-left: 190px;
+    background: white;
+}
+
+.menu-bar ul li:hover .left-side ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    text-align: center;
+}
