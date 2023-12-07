@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom, rgb(144, 238, 211), rgb(134, 132, 216));
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    background: rgba(255,255,255, .3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+    border: 2px solid yellow;
+    margin: 5px;
+}
+.heading{
+    font-size: 30px;
+    padding: 10px;
+}
+.input{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: rgba(255,255,255, .4);
+    border-color: rgba(255,255,255, .5);
+    margin: 10px;
+}
+.btn{
+    background-color: rgb(238, 13, 155);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+    transition: all 1s;
+}
+.info-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+#bmi-result{
+    color: black;
+    font-weight: 600;
+}
