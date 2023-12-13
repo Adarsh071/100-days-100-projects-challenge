@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+}
+.navContainer{
+    width: 100%;
+    /* background-color: rgba(113, 113, 115, 0.776); */
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9, #80d0c7 100%);
+    min-height: 60px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navList{
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navLogo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgba(250, 111, 111, 0.799);
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+
+footer{
+    width: 100%;
+}
+.footerBox{
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9, #80d0c7 100%);
+    width: 100%;
+    height: auto;
+    padding: 3px;
+}
+.footerBox p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contactBox{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+.rightBox img{
+     height: 25rem;
+     width: 18rem;
+     border-radius: 20px;
+     border:0.5px solid rgba(154, 248, 255, 0.700);
+     transition: all 0.6s linear 0s;
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+
+#sweetsName{
+    color: red;
+}
+
+.ingBox{
+    font-size: 1.3rem;
+}
+.recipeBox{
+    font-size: 1.1rem;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 98, 98, 0.6);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s  linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}

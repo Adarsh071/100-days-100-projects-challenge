@@ -1,0 +1,35 @@
+
+.rasagulla{
+        font-size: 20px;
+        background: -webkit-linear-gradient(#ff0202, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+}
+
+.Chhola{
+    font-size: 20px;
+        background: -webkit-linear-gradient(#ff0202, rgb(47, 255, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+}
+
+.Samosa{
+    font-size: 20px;
+        background: -webkit-linear-gradient(#0217ff, rgb(255, 0, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+}
+
+.SahiPaneer{
+    font-size: 20px;
+        background: -webkit-linear-gradient(#ff9102, rgb(4, 0, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+}
+
+.ice-cream{
+    font-size: 20px;
+        background: -webkit-linear-gradient(#ff0202, rgb(0, 0, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+}
