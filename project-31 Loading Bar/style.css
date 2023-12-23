@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+    color: rgb(211, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+} 
+.counter {
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+}
+.loading-bar-back {
+    position: absolute;
+    height: 8px;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.loading-bar-front {
+    position: absolute;
+    height: 8px;
+    background-color: rgb(255, 251, 0);
+    width: 0%;
+    border-radius: 5px;
+    border: none;
+}
