@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: 20px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1.5px solid blue;
+    box-shadow: 0px 0px 10px red;
+    cursor: pointer;
+}
+p{
+    opacity: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2px;
+}
+.detail{
+    padding: 15px;
+}
+.container:hover p{
+    opacity: 1;
+    transition: all 2s;
+}
+.container:hover img{
+    scale: 1.1;
+    transition: all 1s;
+}
+.icon{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.container:hover .icon{
+    opacity: 1;
+    transition: all 2s;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-instagram{
+    color: magenta;
+}
+.fa-facebook{
+    color: #1d1dff;
+}

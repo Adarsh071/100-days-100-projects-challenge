@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.gradientText{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-align: center;
+    background: linear-gradient(135deg, red,  blue, aqua, orange, magenta,red,  rgb(30, 30, 251), aqua, orange, magenta, rgb(61, 246, 61), indigo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 4s ease-in infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
