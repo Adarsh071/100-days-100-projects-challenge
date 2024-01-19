@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.text span {
+  font-size: 120px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  animation: light 2.5s linear infinite;
+  animation-delay: calc(200ms * var(--i));
+}
+@keyframes light {
+  0%,
+  100% {
+    color: #00e8e0;
+    filter: blur(1px);
+    text-shadow: 0 0 10px #00e8e0, 0 0 20px #00e8e0, 0 0 30px #00e8e0,
+      0 0 40px #00e8e0, 0 0 60px #00e8e0, 0 0 80px #00e8e0, 0 0 100px #00e8e0,
+      0 0 120px #00e8e0;
+  }
+  
+  5%,
+  95% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
